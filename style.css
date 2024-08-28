@@ -57,11 +57,26 @@ button#reset-lista {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+button#limpar-lista {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dc3545; 
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px; 
 }
 
 button#reset-lista:hover {
     background-color: #e0a800;
+}
+
+button#limpar-lista:hover {
+    background-color: #c82333; 
 }
 
 ul {
@@ -102,3 +117,4 @@ li button {
 li button:hover {
     background: #c82333;
 }
+
