@@ -118,5 +118,5 @@ function limparLista() {
 
 function historico(){
     const historico = document.getElementById("historico-lista");
-    window.location.href = '../html/historico.html'
+    window.location.href = '../../html/historico.html'
 }
