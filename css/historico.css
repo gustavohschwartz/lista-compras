@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #50adff;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+header button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #50adff;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+header button:hover {
+    background-color: #e0e0e0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+main {
+    padding: 1em;
+    width: 100%;
+    max-width: 800px;
+    flex-grow: 1;
+}
+
+#historico-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#historico-lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#historico-lista button {
+    background-color: #ff6666;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+#historico-lista button:hover {
+    background-color: #ff3333;
+}
+
+footer {
+    background-color: #50adff;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer nav a {
+    color: white;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header button {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    main {
+        padding: 0.5em;
+    }
+
+    #historico-container {
+        padding: 10px;
+    }
+
+    #historico-lista li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #historico-lista button {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+
+    footer nav a {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header button {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    #historico-lista li {
+        font-size: 0.9em;
+    }
+
+    footer nav a {
+        font-size: 0.8em;
+    }
+}
