@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Compras</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Lista de Compras</h1>
-        <form id="formulario">
-            <input type="text" id="input-item" placeholder="Adicionar item..." required>
-            <button type="submit">Adicionar</button>
-        </form>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
 
-        <button id="reset-lista">Desmarcar Itens</button>
-        <button id="limpar-lista">Limpar Lista</button>
+  <body>
+    <header>
+      <h1>Shopping List</h1>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <form id="formulario">
+            <div id="addItens">
+              <input
+                type="text"
+                id="input-item"
+                placeholder="Adicionar item..."
+                required
+              />
+              <button type="submit">Adicionar</button>
+            </div>
+          </form>
 
-        <ul id="lista-itens"></ul>
-    </div>
-    <script src="script.js"></script>
-</body>
+          <div id="actionsItens">
+            <button id="reset-lista">Desmarcar Itens</button>
+            <button id="historico-lista">Histórico</button>
+            <button id="limpar-lista">Limpar Lista</button>
+          </div>
+
+          <ul id="lista-itens"></ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Biblioteca Virtual. Todos os direitos reservados.</p>
+      <nav>
+        <a href="sobre.html">Email</a> | 
+        <a href="contato.html">Telefone</a> |
+        <a href="politica.html">Linkedin</a>
+      </nav>
+    </footer>
+  </body>
 </html>

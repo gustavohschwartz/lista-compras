@@ -1,0 +1,208 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #50adff;
+    color: white;
+    padding: 1em;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container {
+    background: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    max-width: 100%;
+    width: 90%;
+    margin: 16px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+#addItens {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    width: 100%;
+}
+
+#actionsItens {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+button#reset-lista {
+    background-color: #ffc107;
+}
+
+button#reset-lista:hover {
+    background-color: #e0a800;
+}
+
+button#limpar-lista {
+    background-color: #dc3545;
+}
+
+button#limpar-lista:hover {
+    background-color: #c82333;
+}
+
+button#historico-lista {
+    background-color: #063ffc;
+}
+
+button#historico-lista:hover {
+    background-color: #0538c5;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f9f9f9;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+li span {
+    flex: 1;
+}
+
+li span.riscado {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+li button {
+    background: #dc3545;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+li button:hover {
+    background: #c82333;
+}
+
+footer {
+    background-color: #50adff;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer nav a {
+    color: white;
+    margin: 0 10px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 8px;
+    }
+
+    .container {
+        padding: 12px;
+        width: 95%;
+    }
+
+    #addItens {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    #actionsItens {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    li {
+        align-items: flex-start;
+    }
+}
